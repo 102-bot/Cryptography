@@ -1,4 +1,4 @@
-initail_p_box = [
+initial_p_box = [
     58, 50, 42, 34, 26, 18, 10, 2,
     60, 52, 44, 36, 28, 20, 12, 4,
     62, 54, 46, 38, 30, 22, 14, 6,
@@ -17,15 +17,15 @@ final_p_box = [
     34, 2, 42, 10, 50, 18, 58, 26,
     33, 1, 41, 9, 49, 17, 57, 25
 ]
-def initail_final(data,p_box):
+def initial_final(data,p_box):
     result=""
     for i in p_box:
         result+=data[i-1]
     return result
 input_data ="1100000100100011010001010110011110001001101010111100110111101111"
-print("initail data:",input_data)
-final_data=initail_final(input_data,initail_p_box)
+print("initial data:",input_data)
+final_data=initial_final(input_data,initial_p_box)
 print("final data is :",final_data)
 
-inital_data=initail_final(final_data,final_p_box)
+inital_data=initial_final(final_data,final_p_box)
 print("converting same output to inital data :",inital_data)
